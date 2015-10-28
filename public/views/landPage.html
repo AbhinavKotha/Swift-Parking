@@ -18,17 +18,14 @@
                                 <label for="exampleInputEmail1">Email address</label>
                                 <div class="input-group">
                                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" ng-model="userEmail" placeholder="Email" required>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" ng-model="userEmail" placeholder="Email" required="true">
                                 </div>
-                              <div class="form-group"><br/>
+                              </div>
+                              <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
                                 <div class="input-group">
                                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-star"></span></span>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" ng-model="userPassword" placeholder="Password" ng-minlength="6" required>
-                                    <div class="error-container" ng-show="userLoginForm.userEmail.$invalid && userLoginForm.userEmail.$dirty">    
-                                        <small class="error" ng-show="userLoginForm.userEmail.$error.minlength">Your password is required to be at least 6 characters</small>
-                                    </div>
-
+                                    <input type="password" class="form-control" id="exampleInputPassword1" ng-model="userPassword" placeholder="Password" ng-minlength="6" required="true">
                                 </div>    
                                 <br/><hr/>
                                 <button type="button" class="btn btn-primary btn-login pull-right" ng-disabled="userLoginForm.$invalid" ng-click="userValidate()"><span class="glyphicon glyphicon-lock"></span> Login</button>
@@ -56,38 +53,38 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="first_name" id="first_name" class="form-control input-lg" ng-model="userFName" ng-minlength="5" ng-maxlength="25" placeholder="First Name" tabindex="1" required>
+                                            <input type="text" name="first_name" id="first_name" class="form-control input-lg" ng-model="signUpForm.first_name" placeholder="First Name" tabindex="1" required/>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" ng-model="userLName"  ng-maxlength="15" placeholder="Last Name" tabindex="2" required>
+                                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" ng-model="signUpForm.last_name" placeholder="Last Name" tabindex="2" required/>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="display_name" id="display_name" class="form-control input-lg" ng-model="userDisplayName" ng-minlength="5" ng-maxlength="25" placeholder="Display Name" tabindex="3" required>
+                                    <input type="text" name="display_name" id="display_name" class="form-control input-lg" ng-model="signUpForm.display_name" placeholder="Display Name" tabindex="3" required/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control input-lg" ng-model="userEmail" placeholder="Email Address" tabindex="4" required>
+                                    <input type="email" name="email" id="email" class="form-control input-lg" ng-model="signUpForm.email" placeholder="Email Address" tabindex="4" required/>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="password" name="password" id="password" class="form-control input-lg" ng-model="password" ng-minlength="6" ng-maxlength="15" placeholder="Password" tabindex="5" required>
+                                            <input type="password" name="password" id="password" class="form-control input-lg" ng-model="signUpForm.password" placeholder="Password" tabindex="5" required/>
                                         </div>
                                     </div>
                                      <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" ng-model="rePassword" ng-minlength="6" ng-maxlength="15" placeholder="Confirm Password" tabindex="6" required>
+                                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" ng-model="signUpForm.repassword" ng-minlength="6" ng-maxlength="15" placeholder="Confirm Password" tabindex="6" required/>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="license_num" id="license_num" class="form-control input-lg" ng-model="userLicense" ng-minlength="10" ng-maxlength="10" placeholder="License Number" tabindex="7" required>
+                                    <input type="text" name="license_num" id="license_num" class="form-control input-lg" ng-model="signUpForm.license_num" placeholder="License Number" tabindex="7" required>
                                 </div>
                                 <hr/>
-                                <button type="button" class="btn btn-success" ng-click="signUp()" ng-disabled="userSignUpForm.$invalid"><span class="glyphicon glyphicon-plus"></span> Register</button>
+                                <button type="button" class="btn btn-success pull-right" ng-click="signUp()" ng-disabled="userSignUpForm.$invalid"><span class="glyphicon glyphicon-plus"></span> Register</button>
                                 <br/>
                             </form>
                         </div>    
