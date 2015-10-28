@@ -1,0 +1,413 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"C",
+				"connection"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"colo",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"skills",
+				"skills_data"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ali",
+				"vertical-align"
+			],
+			[
+				"back",
+				"backgroundRepeat"
+			],
+			[
+				"baca",
+				"background-image"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"dis",
+				"display_div"
+			],
+			[
+				"table-c",
+				"table-column"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"s",
+				"sans-serif"
+			],
+			[
+				"Skil",
+				"Skills_Icon"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"h",
+				"h6	Tag"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"bor",
+				"border-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"Package Control: install package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Projects/Swift-Parking/public/js/services/transformRequestSvc.js",
+		"/E/Projects/Swift-Parking/public/index.html",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/modules/1.1.sectionregisteruser/js/angular/controllers/sectionRegisterUserCtrl.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/modules/7.0.sitewidecommon/js/angular/services/userLoginSvc.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/modules/0.0.applicationbase/js/angular/app.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/modules/0.0.applicationbase/js/angular/submodules.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/templates/tpl-footer-main.html",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/index.html",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/server.js",
+		"/C/Users/Abhinav Kotha/AppData/Roaming/Sublime Text 2/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/assets/js/angApp.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/modules/6.0.footermain/js/angular/submodule.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/views/section-home.html",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/modules/6.0.footermain/js/angular/directives/footerMainDir.js",
+		"/E/Projects/Swift-Parking/package.json",
+		"/E/Projects/Swift-Parking/public/regUsers.html",
+		"/E/Projects/Swift-Parking/public/views/landPage.html",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/modules/1.0.navigationmain/js/angular/submodule.js",
+		"/E/Workspace/JointVenture2k15-beta-master/server.js",
+		"/E/Projects/Swift-Parking/server.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/config/db.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/app/models/jv.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/app/data/1.create/LOOKUP_CITY",
+		"/E/Projects/Swift-Parking/README.md",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/templates/tpl-modal-login.html",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/modules/1.1.sectionsignup/js/angular/submodule.js",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/Good Project Example/Munter/Theme/js/script.js",
+		"/C/Users/Abhinav Kotha/Desktop/Portfolio/js/back up/style.css",
+		"/C/Users/Abhinav Kotha/Desktop/Portfolio/js/index.html",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/Good Project Example/Munter/Theme/index.html",
+		"/C/Users/Abhinav Kotha/Desktop/Portfolio/Theme/index.html",
+		"/C/Users/Abhinav Kotha/Desktop/Portfolio/Theme/js/script.js",
+		"/C/Users/Abhinav Kotha/Desktop/Portfolio/Theme/css/style.css",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/Good Project Example/Munter/Theme/css/style.css",
+		"/C/Users/Abhinav Kotha/Desktop/Project_bootstrap/index.html",
+		"/C/Users/Abhinav Kotha/Desktop/Project_bootstrap/MyCSS.css",
+		"/E/Spring 2015/CSCE513/Project/Report/Source Files/OfflinePageDownload.java",
+		"/C/Users/Abhinav Kotha/Desktop/Project_bootstrap/demo.html",
+		"/C/Users/Abhinav Kotha/workspace/IR_system/src/ReadFile.java",
+		"/C/Users/Abhinav Kotha/workspace/InvertedIndex/data/cran.all.1400",
+		"/C/Users/Abhinav Kotha/workspace/FuzzyRetrieval/data/cran.qry",
+		"/C/Users/Abhinav Kotha/Desktop/Web Trainings/Web Projects/Abhinav-Angular/helloWorld.html",
+		"/C/Users/Abhinav Kotha/workspace/FuzzyRetrieval/FuzzyRetrieval/src/com/info/retrieval/Stopwords.java",
+		"/E/Workspace/JointVenture2k15-beta-master/sublime-project.sublime-project",
+		"/E/Swift Parking/public/index.html",
+		"/E/Workspace/JointVenture2k15-beta-master/public/modules/4.0.sectionportfolio/js/angular/directives/sectionPortfolioDir.js",
+		"/E/Workspace/JointVenture2k15-beta-master/public/assets/css/style.css",
+		"/E/Workspace/JointVenture2k15-beta-master/public/assets/css/modallogin.css",
+		"/E/Workspace/JointVenture2k15-beta-master/public/assets/css/materialize_.css",
+		"/E/Workspace/JointVenture2k15-beta-master/public/assets/css/footermain.css",
+		"/E/Workspace/JointVenture2k15-beta-master/public/assets/css/applicationbase.css",
+		"/E/Workspace/JointVenture2k15-beta-master/public/assets/css/3rdparty.css",
+		"/E/Workspace/JointVenture2k15-beta-master/public/assets/css/compiled/app.0.css",
+		"/E/Workspace/JointVenture2k15-beta-master/app/models/jv.js",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/login-form.html",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/css/styles.css",
+		"/E/Swift Parking/server.js",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/regUserStyles.css",
+		"/E/Fall 2014/598/axk7493_Assignment 3/Assignment 3/form.js",
+		"/E/Fall 2014/598/axk7493_Assignment 3/Assignment 3/axk7493_hw3.html",
+		"/E/Fall 2014/598/axk7493_Assignment 3/Assignment 3/jquery.validate.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/node_modules/express/package.json",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/node_modules/express/index.js",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/views/section-signup.html",
+		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/views/test-login-check.html",
+		"/C/Users/Abhinav Kotha/Downloads/Munter/Theme/index.html",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/build/web/script/Validations.js",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/Test/test.html",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/test.html",
+		"/C/Users/Abhinav Kotha/Downloads/login-form/index.html",
+		"/C/Users/Abhinav Kotha/Downloads/login-form/assets/scripts/login.js",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/simple-sidebar.css",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/sidebar_menu.js",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/index.html",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/Backup/Login + registration page.html",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/css/RegistrationStyles.css",
+		"/C/Program Files/NetBeans 8.0.2/README.html",
+		"/C/Users/Abhinav Kotha/Desktop/Client Server Example/ccoenraets-directory-backbone-bootstrap-0ef04ec/lib/backbone-min.js",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/build/web/index.html",
+		"/C/Users/Abhinav Kotha/AppData/Local/Temp/Rar$EXa0.129/ccoenraets-directory-backbone-bootstrap-0ef04ec/index.html",
+		"/C/Users/Abhinav Kotha/AppData/Local/Temp/Rar$EXa0.099/ccoenraets-directory-backbone-bootstrap-0ef04ec/tpl/ContactView.html",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/bootstrap-3.3.5-dist/js/Script.js",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/styles.css",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/bootstrap-3.3.5-dist/css/styles.css",
+		"/C/Users/Abhinav Kotha/AppData/Local/Temp/Rar$DIa0.186/styles.css",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/src/java/parking/ParkingSlip.java",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/src/java/parking/RegisteredCustomer.java",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/src/java/parking/ParkingManager.java",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/Script.js",
+		"/C/Users/Abhinav Kotha/Desktop/Project_bootstrap/Folder/demo.html",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/bootstrap-3.3.5-dist/js/bootstrap.js",
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/bs3-login-form.html",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/src/java/parking/ParkingServlet.java",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/build/web/script/forgotCustomerID.js",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/build/web/script/Payment_1.js",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/src/java/parking/LogServlet.java",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/src/java/parking/GuestCustomer.java",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/web/script/Validations.js",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/web/welcome.html",
+		"/C/Users/Abhinav Kotha/Desktop/Spring 2015/CSCE513/index.html",
+		"/F/Server.java",
+		"/C/Users/Abhinav Kotha/workspace/Project_513/index.html",
+		"/F/ZipUtils.java",
+		"/C/Users/Abhinav Kotha/Desktop/Backup_513/Client.java",
+		"/F/Client.java",
+		"/C/Users/Abhinav Kotha/Desktop/Spring 2015/CSCE500/Project/axk7493_csce500_FInalProjectSubmission/Minimum__Weight_Triangulation.java",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/build/web/GuestCustomerLogin.html",
+		"/C/Users/Abhinav Kotha/Desktop/Spring 2015/CSCE508/Assignment_2c_axk7493/MinimumWeightTriangulation.java",
+		"/C/Users/Abhinav Kotha/workspace/Project_513/Hongyi Wu, About.html",
+		"/C/Users/Abhinav Kotha/Downloads/ganesh/ganesh/ABC.java",
+		"/F/SimpleClient.java",
+		"/C/Users/Abhinav Kotha/Desktop/Spring 2015/CSCE 598/Project-1/axk7493_mxk5178_kxs6656-ModelRepair_Source.cpp",
+		"/C/Users/Abhinav Kotha/Desktop/Spring 2015/CSCE 555/project2nachos files/project2nachos files/threadtest.cc",
+		"/C/Users/Abhinav Kotha/Desktop/Spring 2015/CSCE513/demo.html",
+		"/C/Users/Abhinav Kotha/Desktop/Spring 2015/CSCE513/research.html",
+		"/C/Users/Abhinav Kotha/Desktop/Spring 2015/CSCE513/publication.html",
+		"/C/Users/Abhinav Kotha/Desktop/Spring 2015/CSCE513/teaching.html",
+		"/C/Users/Abhinav Kotha/AppData/Local/Temp/kim-23-3-8-9901-10.pdf",
+		"/C/Users/Abhinav Kotha/Downloads/WordCount/WordCount/src/wordcount/WordCount.java",
+		"/E/Fall 2014/598/Lecture notes/csce598 Express/csce598 Express/server2.js",
+		"/E/Fall 2014/598/Lecture notes/flickr access/flickr access/index.html",
+		"/E/Fall 2014/598/Lecture notes/csce598 Express/csce598 Express/tweetServer.js",
+		"/E/Fall 2014/598/Lecture notes/csce598 Express/csce598 Express/tweetCount.js",
+		"/E/Fall 2014/598/Lecture notes/csce598 Express/client/csceCourses.html",
+		"/E/Fall 2014/598/axk7493_Assignment2/hw2c/axk7493_2c.html",
+		"/E/Fall 2014/598/axk7493_Assignment2/hw2c/form1.js",
+		"/E/Fall 2014/598/axk7493_Assignment2/hw2c/form.js",
+		"/E/Fall 2014/598/axk7493_Assignment2/hw2b/axk7493_2b.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bodyparser",
+			"req.body",
+			"bodyParser",
+			"post",
+			"[pst",
+			"req.body",
+			"nav",
+			"easeInOutQuart",
+			"slide 7",
+			"nav",
+			"well",
+			"welll",
+			"font-light",
+			"bla",
+			".text",
+			"text",
+			"bg1",
+			"image",
+			"b",
+			"bg1",
+			"css",
+			"fileReceived",
+			"publicationy",
+			"href",
+			"img",
+			"src",
+			"img",
+			"script",
+			"pic",
+			"profile",
+			"logo",
+			"bubble",
+			"display_div"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true
+}

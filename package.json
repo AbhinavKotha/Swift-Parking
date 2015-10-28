@@ -9,8 +9,10 @@
   "author": "Abhinav",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
-
+    "angular": "^1.4.7",
+    "express": "^4.13.3",
+    "body-parser": "~1.4.2",
+    "method-override": "~2.0.2"
   },
   "devDependencies": {
     "bootstrap": "^3.3.5",

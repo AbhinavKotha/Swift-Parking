@@ -1,56 +1,42 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>Swift Parking</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <!-- CSS -->
-        <link href="css/regUserStyles.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img alt="Brand" src="Images/logo.png">
-                    </a>
-                     <p class="navbar-text">Swift Parking <small>your parking made easy</small></p>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="Images/logo.png">
+            </a>
+            <p class="navbar-text">Swift Parking <small>your parking made easy</small></p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+</nav>
+<div class="row nav-side-menu">
+    <div class="col-sm-3 nav-side-menu" style='background-color: black; height:100% '>
+        <div class="profile-sidebar">
+            <!-- SIDEBARimages/ USERPIC -->
+            <div class="profile-userpic">
+                <img src="images/userProfile.jpg" class="img-responsive img-circle base-circle" alt="profile_pic">
+            </div>
+            <!-- END SIDEBAR USERPIC -->
+            <!-- SIDEBAR USER TITLE -->
+            <div class="profile-usertitle">
+                <div class="profile-usertitle-name">
+                    Hello user
                 </div>
             </div>
-            <br/><br/>
-        </nav>
-        <div class="row nav-side-menu">
-            <div class="col-sm-3 col-sm-2 nav-side-menu" style='background-color: black; height:100% '>
-                <div class="profile-sidebar">
-                    <!-- SIDEBARimages/ USERPIC -->
-                    <div class="profile-userpic">
-                            <img src="images/userProfile.jpg" class="img-responsive img-circle base-circle" alt="profile_pic">
-                    </div>
-                    <!-- END SIDEBAR USERPIC -->
-                    <!-- SIDEBAR USER TITLE -->
-                    <div class="profile-usertitle">
-                            <div class="profile-usertitle-name">
-                                    Hello user
-                            </div>
-                    </div>
-                    <!-- END SIDEBAR USER TITLE -->
-                <p><br/></p>
-                <ul class="nav nav-sidebar">                               
-                    <li  class="active"><a href="#">Home <br/></a></li>
-                    <li ><a href="#">Book a slot <br/></a></li>
-                    <li ><a href="#">View History <br/></a></li>
-                    <li ><a href="#">Logout <br/></a></li>
-                </ul>
-                </div>
-            </div>  
+            <!-- END SIDEBAR USER TITLE -->
+            <p>
+                <br/>
+            </p>
+            <ul class="nav nav-sidebar">
+                <li class="active"><a ui-sref="register.user_home">Home <br/></a></li>
+                <li class="active"><a ui-sref="register.user_book">Book a slot <br/></a></li>
+                <li><a href="#">View History <br/></a></li>
+                <li><a href="#">Logout <br/></a></li>
+            </ul>
         </div>
-    </body>
-</html>
+    </div>
+<div class="col-offset-sm-1 col-sm-8 main-content" ui-view="user-section">
+    Main content here
+</div>
+</div>
