@@ -41,8 +41,23 @@ angular.module('parkingApp', ['ui.router',
                     template: "User Book"
                 }
             }
+        })
+        .state('user_logout',{
+            url: "/logout",
+            views: {
+                'main-section': {
+                    templateUrl: "views/landPage.html"
+                }
+            }
+        })
+        .state('success',{
+            url: "/success",
+            views: {
+                'main-section': {
+                    templateUrl: "views/landPage.html"
+                }
+            }
         });
-
 
 
     // For any unmatched url, redirect to /

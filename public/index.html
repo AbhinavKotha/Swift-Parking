@@ -10,22 +10,25 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <!--css-->
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/formStyles.css" rel="stylesheet">
+    <link href="css/regUserStyles.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-ui-router.js"></script>
     <script src="js/controllers/mainController.js"></script>
     <script src="js/directives/mainDir.js"></script>
-     <script src="js/services/transformRequestSvc.js"></script>
+    <script src="js/directives/pwCheck.js"></script>
+    <script src="js/services/transformRequestSvc.js"></script>
     <script src="js/app.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
     
-
     <div ui-view="main-section" class="ng-view-container">
     </div>
-
-  </body>
+    <!-- <div ui-view="login-section" class="ng-view-container" ng-controller="signUpController">
+    </div>
+ -->  </body>
 </html>

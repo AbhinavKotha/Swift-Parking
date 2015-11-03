@@ -1,95 +1,149 @@
 <div class="container" main-dir="">
-        <p><br/></p>
-        <div id="myTabContent" class="tab-content">
-            <div class="tab-pane active in" id="login">
-                <div class="col-md-7"></div>
-                <div class="col-md-5">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <ul class="nav nav-tabs">
-                                    <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
-                                    <li><a href="#create" data-toggle="tab">Create Account</a></li>
-                            </ul>
-                            <div class="page-header">
-                                <h3>Login Form</h3>
-                            </div>
-                            <form name="userLoginForm" novalidate>
-                              <div class="form-group">
+    <p>
+        <br/>
+    </p>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane active in" id="login">
+            <div class="col-md-7"></div>
+            <div class="col-md-5">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+                            <li><a href="#create" data-toggle="tab">Create Account</a></li>
+                        </ul>
+                        <div class="page-header">
+                            <h3>Login Form</h3>
+                        </div>
+                        <form name="userLoginForm" novalidate>
+                            <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
                                 <div class="input-group">
                                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" ng-model="userEmail" placeholder="Email" required="true">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" name="userEmail" ng-model="login.userEmail" placeholder="Email" email="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required="true">
+                                    </br>
                                 </div>
-                              </div>
-                              <div class="form-group">
+                                <div ng-show="userLoginForm.$submitted || userLoginForm.userEmail.$touched">
+                                    <span class="error" ng-if="userLoginForm.userEmail.$error.required">Please input your email address</span>
+                                    <span class="error" ng-if="userLoginForm.userEmail.$error.email">Please input a valid email address.</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
                                 <div class="input-group">
                                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-star"></span></span>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" ng-model="userPassword" placeholder="Password" ng-minlength="6" required="true">
-                                </div>    
-                                <br/><hr/>
-                                <button type="button" class="btn btn-primary btn-login pull-right" ng-disabled="userLoginForm.$invalid" ng-click="userValidate()"><span class="glyphicon glyphicon-lock"></span> Login</button>
-                              <br/>
-                              </div>
-                            </form>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-            <!-- registration form starts here -->
-            <div class="tab-pane fade" id="create">
-                <div class="col-md-7"></div>
-                <div class="col-md-5">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <ul class="nav nav-tabs">
-                                <li><a href="#login" data-toggle="tab">Login</a></li>
-                                <li class="active"><a href="#create" data-toggle="tab">Create Account</a></li>
-                            </ul>
-                            <div class="page-header">
-                                <h3>Registration Form</h3>
-                            </div>
-                            <form name="userSignUpForm" novalidate>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="first_name" id="first_name" class="form-control input-lg" ng-model="signUpForm.first_name" placeholder="First Name" tabindex="1" required/>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" ng-model="signUpForm.last_name" placeholder="Last Name" tabindex="2" required/>
-                                        </div>
-                                    </div>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" name="userPassword" ng-model="login.userPassword" placeholder="Password" ng-minlength="6" ng-maxlength="20" required="true">
+                                    </br>
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" name="display_name" id="display_name" class="form-control input-lg" ng-model="signUpForm.display_name" placeholder="Display Name" tabindex="3" required/>
+                                <div ng-show="userLoginForm.$submitted || userLoginForm.userPassword.$touched">
+                                    <small class="error" ng-if="userLoginForm.userPassword.$error.required">Please input your password.</small>
+                                    <small class="error" ng-if="userLoginForm.userPassword.$error.minlength">Password is too small.</small>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control input-lg" ng-model="signUpForm.email" placeholder="Email Address" tabindex="4" required/>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="password" name="password" id="password" class="form-control input-lg" ng-model="signUpForm.password" placeholder="Password" tabindex="5" required/>
-                                        </div>
-                                    </div>
-                                     <div class="col-xs-12 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" ng-model="signUpForm.repassword" ng-minlength="6" ng-maxlength="15" placeholder="Confirm Password" tabindex="6" required/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="license_num" id="license_num" class="form-control input-lg" ng-model="signUpForm.license_num" placeholder="License Number" tabindex="7" required>
-                                </div>
-                                <hr/>
-                                <button type="button" class="btn btn-success pull-right" ng-click="signUp()" ng-disabled="userSignUpForm.$invalid"><span class="glyphicon glyphicon-plus"></span> Register</button>
                                 <br/>
-                            </form>
-                        </div>    
-                    </div> 
+                                <hr/>
+                                <button type="button" class="btn btn-primary btn-login pull-right" ng-disabled="userLoginForm.$invalid" ng-click="userValidate()"><span class="glyphicon glyphicon-lock"></span> Login</button>
+                                <br/>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>    
+        <!-- registration form starts here -->
+        <div class="tab-pane fade" id="create">
+            <div class="col-md-7"></div>
+            <div class="col-md-5">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <ul class="nav nav-tabs">
+                            <li><a href="#login" data-toggle="tab">Login</a></li>
+                            <li class="active"><a href="#create" data-toggle="tab">Create Account</a></li>
+                        </ul>
+                        <div class="page-header">
+                            <h3>Registration Form</h3>
+                        </div>
+                        <form name="userSignUpForm" novalidate>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="first_name" id="first_name" class="form-control input-lg" ng-model="SignUpForm.first_name" placeholder="First Name" tabindex="1" required/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="last_name" id="last_name" class="form-control input-lg" ng-model="SignUpForm.last_name" placeholder="Last Name" tabindex="2" required/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div ng-show="userSignUpForm.$submitted || userSignUpForm.first_name.$touched">
+                                        <small class="error" ng-if="userSignUpForm.first_name.$error.required">Please input your First Name.</small>
+                                        <!-- <small class="error" ng-if="userSignUpForm.first_name.$error.minlength">Your First Name should be greater than 4 characters.</small> -->
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div ng-show="userSignUpForm.$submitted || userSignUpForm.last_name.$touched">
+                                        <small class="error" ng-if="userSignUpForm.last_name.$error.required">Please input your Last Name.</small>
+                                       <!--  <small class="error" ng-if="userSignUpForm.last_name.$error.minlength">Your password should be greater than 6 characters.</small> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="display_name" id="display_name" class="form-control input-lg" ng-model="SignUpForm.display_name" placeholder="Display Name" tabindex="3" required/>
+                            </div>
+                            <div ng-show="userSignUpForm.$submitted || userSignUpForm.display_name.$touched">
+                                        <small class="error" ng-if="userSignUpForm.display_name.$error.required">Please input your Display Name.</small>
+                                       <!--  <small class="error" ng-if="userSignUpForm.last_name.$error.minlength">Your password should be greater than 6 characters.</small> -->
+                                    </div>
+                            <div class="form-group">
+                                <input type="email" name="signUpEmail" id="email" class="form-control input-lg" ng-model="SignUpForm.email" placeholder="Email Address" email="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" tabindex="4" required/>
+                            </div>
+                            <div ng-show="userSignUpForm.$submitted || userSignUpForm.signUpEmail.$touched">
+                                    <span class="error" ng-if="userSignUpForm.signUpEmail.$error.required">Please input your email address</span>
+                                    <span class="error" ng-if="userSignUpForm.signUpEmail.$error.email">Please input a valid email address.</span>
+                                </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="password" class="form-control input-lg" ng-model="SignUpForm.password" ng-minlength="6" ng-maxlength="15" placeholder="Password" tabindex="5" required/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" ng-model="SignUpForm.password_confirmation" ng-minlength="6"  placeholder="Confirm Password" tabindex="6" pw-check-models="SignUpForm" pw-check="SignUpForm.password" required/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div ng-show="userSignUpForm.$submitted || userSignUpForm.password.$touched">
+                                        <small class="error" ng-if="userSignUpForm.password.$error.required">Please input your Password.</small>
+                                        <small class="error" ng-if="userSignUpForm.password.$error.minlength">Your password should be greater than 6 characters.</small>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div ng-show="userSignUpForm.$submitted || userSignUpForm.password_confirmation.$touched">
+                                        <small class="error" ng-if="userSignUpForm.password_confirmation.$error.required">Please input your Confirm Password.</small>
+                                        <small class="error" ng-if="userSignUpForm.password_confirmation.$error.minlength">Your password should be greater than 6 characters.</small>
+                                        <small class="error" ng-if="userSignUpForm.password_confirmation.$error.pwmatch">Passwords should match</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="license_num" id="license_num" class="form-control input-lg" ng-model="SignUpForm.license_num" placeholder="License Number" tabindex="7" required pattern="^[0-9]{10}$">
+                            </div>
+                            <div ng-show="userSignUpForm.$submitted || userSignUpForm.license_num.$touched">
+                                    <small class="error" ng-if="userSignUpForm.license_num.$error.required">Please input your License Number.</small>
+                                    <small class="error" ng-if="userSignUpForm.license_num.$error.pattern">Please check your License Number.</small>
+                            </div>
+                            <hr/>
+                            <button type="button" class="btn btn-success pull-right" ng-click="signUp(SignUpForm)" ng-disabled="userSignUpForm.$invalid"><span class="glyphicon glyphicon-plus"></span> Register</button>
+                            <br/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+
+  input.ng-invalid.ng-touched {
+    background-color: #FA787E;
+    color: black;
+  }
+  .error {
+  	color:red;
+  	font-size: 12px;
+  }

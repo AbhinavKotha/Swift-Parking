@@ -16,8 +16,8 @@
                         res.json({
                             'result': 1
                         });
-                    }else{
-                      res.json({
+                    } else {
+                        res.json({
                             'result': 0
                         });
                     }
@@ -27,9 +27,26 @@
             });
         });
 
-        // frontend routes =========================================================
-        // route to handle all other angular requests
-        app.get('*', function(req, res) {
-            res.sendfile('./public/index.html');
-        });
+        app.post("/insertuser", function(req, res) {
+                connection.query('INSERT INTO regusers(fName,lName,displayName,email,password,licenseNum) VALUES(?,?,?,?,?,?)',[req.body.first_name,req.body.last_name,req.body.display_name,req.body.email,req.body.password,req.body.license_num],function(record,err){
+                    if(!err) {
+                        res.json({
+                            'result':1
+                        });
+                    }else{
+                        res.json({
+                            'result':0
+                        });
+                        console.log('Error while inserting record.');
+                    }
+                    //console.log(record);
+                });
+
+            });
+        //})
+    // frontend routes =========================================================
+    // route to handle all other angular requests
+    app.get('*', function(req, res) {
+        res.sendfile('./public/index.html');
+    });
     }
