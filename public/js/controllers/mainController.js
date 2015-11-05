@@ -1,8 +1,25 @@
 angular.module('parkingApp.controllers', [])
-    .controller("mainController", function($scope,$http,transformRequestAsFormPost) {
+    .controller("mainController", function($scope,$http,transformRequestAsFormPost,$state) {
         // console.log("In mainController");
-        $scope.userValidate = function() {
-            console.log("clicked userValidate");
+        $scope.userValidate = function(user) {
+
+        	$http({
+        		method: 'POST',
+        		url: '/verifyuser',
+        		transformRequest: transformRequestAsFormPost,
+        		data: {
+        			email:user.userEmail,
+        			password:user.userPassword
+        		}
+        	})
+        	.then(function successCallback(response, responseCode) {
+                if (response.data.result) {
+                    $state.go('register');
+                }
+            }, function errorCallback(error) {
+
+            });
+            //console.log("user.userEmail");
         }
 
         $scope.SignUpForm={
@@ -11,12 +28,8 @@ angular.module('parkingApp.controllers', [])
         };
 
         $scope.signUp = function(userModel) {
-
-            console.log("Clicked on Register");
-		// console.log(userModel.first_name, userModel.last_name);
-            
+    
             $http({
-            	
                 method: 'POST',
                 url: '/insertuser',
                 transformRequest: transformRequestAsFormPost,
@@ -30,8 +43,7 @@ angular.module('parkingApp.controllers', [])
                 }
             }).then(function successCallback(response, responseCode) {
                 if (response.data.result) {
-                    $state.go('/success');
-                    //response.send("success");
+                    $state.go('success');
                 }
             }, function errorCallback(error) {
 

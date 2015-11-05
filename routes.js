@@ -3,10 +3,9 @@
     // server routes ===========================================================
     // handle things like api calls
     module.exports = function(app) {
-        app.post("/getuser", function(req, res) {
-            console.log(req.body);
+        app.post("/verifyuser", function(req, res) {
 
-            connection.query('SELECT * from regusers WHERE email =?', [req.body.username], function(err, rows, fields) {
+            connection.query('SELECT * from regusers WHERE email =? AND password =?', [req.body.email,req.body.password], function(err, rows, fields) {
 
                 if (!err) {
 

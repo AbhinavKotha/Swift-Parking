@@ -11,7 +11,7 @@ angular.module('parkingApp.directives', [])
                 var me = attrs.ngModel;
                 var matchTo = attrs.pwCheck;
                 
-                console.log(me+" ,"+matchTo);
+                //console.log(me+" ,"+matchTo);
                 scope.$watch('models',function(newVal){
                     if(typeof newVal.password !== 'undefined'){
                         ctrl.$setValidity('pwmatch', scope.models['password'] === scope.models['password_confirmation'] );
