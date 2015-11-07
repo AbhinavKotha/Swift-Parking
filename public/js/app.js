@@ -22,7 +22,7 @@ angular.module('parkingApp', ['ui.router',
             url: "/register",
             views: {
                 'main-section': {
-                    templateUrl: "regUsers.html"
+                    templateUrl: "views/regUsers.html"
                 }
             }
         })
@@ -38,7 +38,7 @@ angular.module('parkingApp', ['ui.router',
             url: "/user_book",
             views: {
                 'user-section': {
-                    template: "User Book"
+                    templateUrl: "views/slotBooking.html"
                 }
             }
         })

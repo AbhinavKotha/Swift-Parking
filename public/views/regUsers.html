@@ -1,0 +1,56 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="Images/logo.png">
+            </a>
+            <p class="navbar-text">Swift Parking <small>your parking made easy</small></p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+</nav>
+<div class="row row-offcanvas row-offcanvas-left Row">
+    <!-- sidebar -->
+    <div class="column col-sm-2  sidebar-offcanvas" id="sidebar" style='background-color: black; height:100%;position:absolute'>
+        <ul class="nav">
+            <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+        </ul>
+        <div class="profile-sidebar">
+            <!-- SIDEBARimages/ USERPIC -->
+            <div class="profile-userpic">
+                <img src="images/userProfile.jpg" class="img-responsive img-circle base-circle" alt="profile_pic">
+            </div>
+            <!-- END SIDEBAR USERPIC -->
+            <!-- SIDEBAR USER TITLE -->
+            <div class="profile-usertitle">
+                <div class="profile-usertitle-name">
+                    Hello {{UserName}}
+                </div>
+            </div>
+            <!-- END SIDEBAR USER TITLE -->
+            <p>
+                <br/>
+            </p>
+            <ul class="nav hidden-xs" id="lg-menu">
+                <li class="active"><a ui-sref="register.user_home"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+                <li><a ui-sref="register.user_book"><i class="glyphicon glyphicon-list"></i> Book a Slot</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-paperclip"></i> Booking History</a></li>
+                <li ng-show="userTypes"><a ui-sref="user_logout"><i class="glyphicon glyphicon-book"></i> Reports</a></li>
+                <li><a ui-sref="user_logout"><i class="glyphicon glyphicon-off"></i> Logout</a></li>
+            </ul>
+            <!-- tiny only nav-->
+            <ul class="nav visible-xs" id="xs-menu">
+                <li><a ui-sref="register.user_home" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
+                <li><a ui-sref="register.user_book" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
+                <li><a href="#" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
+                <li ng-show="userTypes"><a ui-sref="user_logout"><i class="glyphicon glyphicon-book"></i> Reports</a></li>
+                <li><a ui-serif="user_logout" class="text-center"><i class="glyphicon glyphicon-off"></i></a></li>
+            </ul>
+        </div>
+        <!-- /sidebar -->
+    </div>
+    <div class="column col-sm-10 main-content pull-right" ui-view="user-section">
+        Main content here
+    </div>
+</div>

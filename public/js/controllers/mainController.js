@@ -2,7 +2,7 @@ angular.module('parkingApp.controllers', [])
     .controller("mainController", function($scope,$http,transformRequestAsFormPost,$state) {
         // console.log("In mainController");
         $scope.userValidate = function(user) {
-
+            
         	$http({
         		method: 'POST',
         		url: '/verifyuser',
@@ -15,6 +15,12 @@ angular.module('parkingApp.controllers', [])
         	.then(function successCallback(response, responseCode) {
                 if (response.data.result) {
                     $state.go('register');
+                    $scope.UserName=response.data.userName;
+                }
+                /* To view the admin related options*/
+                if(response.data.userType==='ADMIN')
+                {
+                    $scope.userTypes=1;
                 }
             }, function errorCallback(error) {
 

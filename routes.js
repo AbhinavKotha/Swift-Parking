@@ -13,7 +13,9 @@
                     if (rows.length) {
 
                         res.json({
-                            'result': 1
+                            'result': 1,
+                            'userName':rows[0].displayName,
+                            'userType':rows[0].userType
                         });
                     } else {
                         res.json({
@@ -27,7 +29,7 @@
         });
 
         app.post("/insertuser", function(req, res) {
-                connection.query('INSERT INTO regusers(fName,lName,displayName,email,password,licenseNum) VALUES(?,?,?,?,?,?)',[req.body.first_name,req.body.last_name,req.body.display_name,req.body.email,req.body.password,req.body.license_num],function(record,err){
+                connection.query('INSERT INTO regusers(fName,lName,displayName,email,password,licenseNum) VALUES(?,?,?,?,?,?)',[req.body.first_name,req.body.last_name,req.body.display_name,req.body.email,req.body.password,req.body.license_num],function(err,record){
                     if(!err) {
                         res.json({
                             'result':1
