@@ -17,11 +17,6 @@ angular.module('parkingApp.directives', [])
                         ctrl.$setValidity('pwmatch', scope.models['password'] === scope.models['password_confirmation'] );
                     }
                 },true);
-
-                // scope.$watch('[me, matchTo]', function(value){
-                //     console.log("watched");
-                //     ctrl.$setValidity('pwmatch', scope.models['password'] === scope.models['password_confirmation'] );
-                // });
             }
         }
     }]);

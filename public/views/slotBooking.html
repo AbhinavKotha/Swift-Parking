@@ -1,7 +1,30 @@
 <div class="container">
-	<div class="row">
-		
-	</div>
-	
-
+    <div class="container">
+        <label for="parkingZonesDropdown">Select Parking Area:</label>
+        <select ng-model="parkingZoneNames" ng-options="zone.slotName for zone in zones" ng-change="changedValue(parkingZoneNames)">
+            <option value=""> Select Parking Zone</option>
+        </select>
+        <br/>
+        <br/>
+        <br/>
+        <div class="container">
+            <div class="row" ng-repeat="itemPointer in slotDetails" ng-if="$index % 6 == 0">
+                <div class="col-md-1 col-sm-1" ng-repeat="item in slotDetails.slice($index,$index+5)" ng-if="item.slotId ">
+                    <img ng-class="{'slot-available':item.slotStatus == 'Available','slot-unavailable':item.slotStatus !== 'Available'}"  _alt="slot_{{item.slotId}}" id="{{item.slotId}}" class="{{item.slotStatus}}" ng-click="slotClick(item)" />
+                </div>
+            </div>
+        </div>
+        <!-- <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <td ng-repeat="item in slotDetails"><img ng-src="{{item.slotStatus == 'Available' && 'images/car_green.jpg' ||'images/car_red.jpg'}}" alt="slot_{{item.slotId}}" id="{{item.slotId}}" class="{{item.slotStatus}}" ng-click="{{item.slotStatus =='Available' && 'bookSlot(item.slotId)' || 'disable(item.slotId)'}}" /></td>
+                </tr>
+            </table>
+        </div> -->
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Available Slots:{{count}}
+        </div>
+    </div>
 </div>

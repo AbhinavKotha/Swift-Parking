@@ -3,6 +3,8 @@ angular.module('parkingApp.directives', [])
         return {
             restrict: 'A',
             link: function(scope, element, attrs) {
+               /*add the function to add a css class to html image element*/
+
                 element.find('.btn-login').on('click', function() {
                     var str_email = $('#exampleInputEmail1').val();
                     var str_passw = $('#exampleInputPassword1').val();

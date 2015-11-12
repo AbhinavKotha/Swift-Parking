@@ -1,0 +1,20 @@
+.slot-available,.slot-unavailable{
+	width: 30px;
+	height: 30px;
+}
+.slot-available{
+	background-color:green;
+	background: url(../images/car_green.jpg) no-repeat;
+}
+
+.slot-unavailable{
+	background-color: red;
+	background: url(../images/car_red.jpg) no-repeat;
+}
+
+.slot-clicked{
+	background:url();
+}
+/*
+ng-src="{{ && 'images/car_green.jpg' ||'images/car_red.jpg'}}"
+*/

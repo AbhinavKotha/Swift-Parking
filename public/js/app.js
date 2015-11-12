@@ -11,11 +11,18 @@ angular.module('parkingApp', ['ui.router',
     $stateProvider
         .state('/', {
             url: "/",
+            // onEnter:function(scope,state){
+            //     if(scope.sessionVar){
+
+            //     }
+            //     else{
+            //         state.go('/');
+            //     }
+            // }
             views: {
                 'main-section': {
                     templateUrl: "views/landPage.html"
                         //template:"Hello"
-
                 }
             }
         }).state('register', {

@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"va",
+				"VALUES"
+			],
+			[
+				"error",
+				"errorCallback"
+			],
+			[
+				"zone",
+				"zoneName"
+			],
+			[
+				"slot",
+				"slotDetails"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"slo",
+				"slotDetails"
+			],
+			[
+				"erro",
+				"errorCallback"
+			],
+			[
+				"respo",
+				"responseCode"
+			],
+			[
+				"succe",
+				"successCallback"
+			],
+			[
+				"zones",
+				"getParkingZoneNames"
+			],
+			[
+				"side",
+				"sidebar"
+			],
+			[
 				"user",
 				"userType"
 			],
@@ -188,18 +232,10 @@
 	"buffers":
 	[
 		{
-			"file": "public/regUsers.html",
+			"file": "public/views/slotBooking.html",
 			"settings":
 			{
-				"buffer_size": 3275,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/css/regUserStyles.css",
-			"settings":
-			{
-				"buffer_size": 1246,
+				"buffer_size": 884,
 				"line_ending": "Windows"
 			}
 		},
@@ -207,15 +243,7 @@
 			"file": "public/js/controllers/mainController.js",
 			"settings":
 			{
-				"buffer_size": 1897,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/js/directives/mainDir.js",
-			"settings":
-			{
-				"buffer_size": 1101,
+				"buffer_size": 4625,
 				"line_ending": "Windows"
 			}
 		},
@@ -223,7 +251,23 @@
 			"file": "routes.js",
 			"settings":
 			{
-				"buffer_size": 2079,
+				"buffer_size": 4447,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/views/regUsers.html",
+			"settings":
+			{
+				"buffer_size": 2994,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/css/regUserStyles.css",
+			"settings":
+			{
+				"buffer_size": 1476,
 				"line_ending": "Windows"
 			}
 		}
@@ -256,27 +300,33 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Abhinav Kotha/Desktop/Web Trainings/Web Projects/Abhinav-Angular/dropdown.html",
+		"/C/Users/Abhinav Kotha/Desktop/Web Trainings/Web Projects/Abhinav-Angular/controllers/countryCityController.js",
+		"/E/Projects/Swift-Parking/public/views/regUsers.html",
+		"/E/Projects/Swift-Parking/public/js/directives/pwCheck.js",
+		"/E/Projects/Swift-Parking/routes.js",
+		"/E/Projects/Swift-Parking/public/js/controllers/parkingZonesController.js",
+		"/C/Users/Abhinav Kotha/Desktop/Portfolio/css/style.css",
+		"/E/Projects/Swift-Parking/public/index.html",
+		"/C/Users/Abhinav Kotha/Downloads/0BcYmmL4pj/js/scripts.js",
+		"/E/Projects/Swift-Parking/public/js/controllers/mainController.js",
+		"/E/Projects/Swift-Parking/public/css/regUserStyles.css",
+		"/C/Users/Abhinav Kotha/Downloads/0BcYmmL4pj/index.html",
+		"/E/Projects/Swift-Parking/public/js/app.js",
+		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/web/ParkingLot.html",
+		"/E/Projects/Swift-Parking/public/js/controllers/parkingZonesDropdown.js",
+		"/E/Projects/Swift-Parking/public/js/directives/mainDir.js",
+		"/E/Projects/Swift-Parking/public/css/styles.css",
+		"/E/Projects/Swift-Parking/public/views/slotBooking.html",
 		"/E/Projects/Swift-Parking/public/regUsers.html",
 		"/C/Users/Abhinav Kotha/Downloads/0BcYmmL4pj/css/styles.css",
-		"/C/Users/Abhinav Kotha/Downloads/0BcYmmL4pj/index.html",
 		"/E/Projects/Swift-Parking/public/views/landPage.html",
-		"/E/Projects/Swift-Parking/public/js/app.js",
-		"/E/Projects/Swift-Parking/public/views/slotBooking.html",
-		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/web/ParkingLot.html",
-		"/E/Projects/Swift-Parking/public/js/controllers/mainController.js",
 		"/C/Users/Abhinav Kotha/Desktop/Web Trainings/Web Projects/Abhinav-Angular/controllers/ngClassController.js",
 		"/C/Users/Abhinav Kotha/Desktop/Web Trainings/Web Projects/Abhinav-Angular/helloWorld.html",
 		"/C/Users/Abhinav Kotha/Desktop/Web Trainings/Web Projects/Abhinav-Angular/controllers/helloController.js",
-		"/E/Projects/Swift-Parking/routes.js",
 		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/web/TypeOfCustomer.html",
-		"/E/Projects/Swift-Parking/public/css/regUserStyles.css",
-		"/C/Users/Abhinav Kotha/Downloads/0BcYmmL4pj/js/scripts.js",
-		"/E/Projects/Swift-Parking/public/index.html",
-		"/E/Projects/Swift-Parking/public/css/styles.css",
 		"/E/Projects/Swift-Parking/public/css/formStyles.css",
 		"/C/Users/Abhinav Kotha/Desktop/Portfolio/index.html",
-		"/E/Projects/Swift-Parking/public/js/directives/pwCheck.js",
-		"/E/Projects/Swift-Parking/public/js/directives/mainDir.js",
 		"/E/Projects/Swift-Parking/public/js/directives/compareToDir.js",
 		"/E/Projects/Swift-Parking/public/js/directives/formDir.js",
 		"/E/Projects/Swift-Parking/public/js/controllers/signUpController.js",
@@ -288,7 +338,6 @@
 		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/src/java/parking/RegisteredCustomer.java",
 		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/src/java/parking/LogServlet.java",
 		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/web/EditPersonalInformation.html",
-		"/C/Users/Abhinav Kotha/Desktop/Portfolio/css/style.css",
 		"/E/Projects/Swift-Parking/server.js",
 		"/E/Projects/Swift-Parking/dbConfig.js",
 		"/E/Workspace/2.Projects/JointVenture2k15-beta/public/views/test-login-check.html",
@@ -378,12 +427,7 @@
 		"/C/Users/Abhinav Kotha/Desktop/Special Project/Script.js",
 		"/C/Users/Abhinav Kotha/Desktop/Project_bootstrap/Folder/demo.html",
 		"/C/Users/Abhinav Kotha/Desktop/Special Project/bootstrap-3.3.5-dist/js/bootstrap.js",
-		"/C/Users/Abhinav Kotha/Desktop/Special Project/bs3-login-form.html",
-		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/src/java/parking/ParkingServlet.java",
-		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/build/web/script/forgotCustomerID.js",
-		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/build/web/script/Payment_1.js",
-		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/src/java/parking/GuestCustomer.java",
-		"/C/Users/Abhinav Kotha/Desktop/SwiftParkingAllotment/SwiftParkingAllotment/web/script/Validations.js"
+		"/C/Users/Abhinav Kotha/Desktop/Special Project/bs3-login-form.html"
 	],
 	"find":
 	{
@@ -391,7 +435,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -458,23 +502,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public/regUsers.html",
+					"file": "public/views/slotBooking.html",
 					"settings":
 					{
-						"buffer_size": 3275,
+						"buffer_size": 884,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1856,
-								1856
+								884,
+								884
 							]
 						],
 						"settings":
@@ -484,25 +528,109 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 383.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "public/css/regUserStyles.css",
+					"file": "public/js/controllers/mainController.js",
 					"settings":
 					{
-						"buffer_size": 1246,
+						"buffer_size": 4625,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								229,
-								229
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "routes.js",
+					"settings":
+					{
+						"buffer_size": 4447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3319,
+								3319
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 35.0,
+						"translation.y": 1039.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/views/regUsers.html",
+					"settings":
+					{
+						"buffer_size": 2994,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2885,
+								2885
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 232.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/css/regUserStyles.css",
+					"settings":
+					{
+						"buffer_size": 1476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
 							]
 						],
 						"settings":
@@ -512,91 +640,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 189.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "public/js/controllers/mainController.js",
-					"settings":
-					{
-						"buffer_size": 1897,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								850,
-								850
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/js/directives/mainDir.js",
-					"settings":
-					{
-						"buffer_size": 1101,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "routes.js",
-					"settings":
-					{
-						"buffer_size": 2079,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								738,
-								746
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 55.0,
+						"translation.y": 561.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
