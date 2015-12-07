@@ -41,6 +41,9 @@
                                 </div>
                                 <br/>
                                 <hr/>
+                                <div ng-show="loginAuthFlag">
+                                    <small class="error">Please check your credentials and log in.</small>
+                                </div>
                                 <button type="button" class="btn btn-primary btn-login pull-right" ng-disabled="userLoginForm.$invalid" ng-click="userValidate(login)"><span class="glyphicon glyphicon-lock"></span> Login</button>
                                 <br/>
                             </div>

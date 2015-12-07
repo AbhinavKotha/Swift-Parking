@@ -36,7 +36,7 @@
             <ul class="nav hidden-xs lg-menu" id="lg-menu">
                 <li class="active"><a ui-sref="register.user_home"><i class="glyphicon glyphicon-home"></i>Home</a></li>
                 <li><a ui-sref="register.user_book" ng-click="getParkingZoneNames()"><i class="glyphicon glyphicon-list"></i> Book a Slot</a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-paperclip"></i> Booking History</a></li>
+                <li><a ui-sref="register.user_bookings" ng-click="getUserParkings()"><i class="glyphicon glyphicon-paperclip"></i> Booking History</a></li>
                 <li ng-show="userTypes"><a ui-sref="user_logout" ><i class="glyphicon glyphicon-book"></i> Reports</a></li>
                 <li><a ui-sref="user_logout" ng-click="userLogout()"><i class="glyphicon glyphicon-off"></i> Logout</a></li>
             </ul>
@@ -44,7 +44,7 @@
             <ul class="nav visible-xs xs-menu" id="xs-menu">
                 <li><a ui-sref="register.user_home" class="text-center"><i class="glyphicon glyphicon-home"></i></a></li>
                 <li><a ui-sref="register.user_book" ng-click="getParkingZoneNames()" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
-                <li><a href="#" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
+                <li><a ui-sref="register.user_bookings" ng-click="getUserParkings()" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
                 <li ng-show="userTypes"><a ui-sref="user_logout"><i class="glyphicon glyphicon-book"></i></a></li>
                 <li><a ui-sref="user_logout" class="text-center" ng-click="userLogout()"><i class="glyphicon glyphicon-off"></i></a></li>
             </ul>

@@ -10,10 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.4.7",
-    "express": "^4.13.3",
+    "angular-strap": "^2.3.6",
     "body-parser": "~1.4.2",
-    "method-override": "~2.0.2",
-    "express-session": "^1.11.3"
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "method-override": "~2.0.2"
   },
   "devDependencies": {
     "bootstrap": "^3.3.5",

@@ -1,6 +1,6 @@
-.slot-available,.slot-unavailable{
+.slot-available,.slot-unavailable,.slot-clicked{
 	width: 30px;
-	height: 30px;
+	height: 17px;
 }
 .slot-available{
 	background-color:green;
@@ -13,7 +13,17 @@
 }
 
 .slot-clicked{
-	background:url();
+	background:url(..url/images/car_highlight.jpg) no-repeat;
+}
+.row{
+	padding-bottom:3px;
+}
+.center-block{
+	float:none;
+}
+.dateTime{
+	padding-left: 0px;
+	padding-right: 0px;
 }
 /*
 ng-src="{{ && 'images/car_green.jpg' ||'images/car_red.jpg'}}"

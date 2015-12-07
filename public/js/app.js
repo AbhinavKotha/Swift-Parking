@@ -1,7 +1,8 @@
 angular.module('parkingApp', ['ui.router',
     'parkingApp.controllers',
     'parkingApp.directives',
-    'parkingApp.services'
+    'parkingApp.services',
+    'mgcrea.ngStrap'
 ])
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -64,8 +65,23 @@ angular.module('parkingApp', ['ui.router',
                     templateUrl: "views/landPage.html"
                 }
             }
+        })
+        .state('register.booking_confirmation',{
+            url:"/booking_confirmation",
+            views:{
+                'user-section':{
+                templateUrl:"views/parkingSlip.html"
+                }
+            }
+        })
+        .state('register.user_bookings',{
+            url:"/user_bookings",
+            views:{
+                'user-section':{
+                    templateUrl:"views/bookingHistory.html"
+                }
+            }
         });
-
 
     // For any unmatched url, redirect to /
     $urlRouterProvider.otherwise("/");

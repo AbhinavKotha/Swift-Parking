@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" main-dir="">
     <div class="container">
         <label for="parkingZonesDropdown">Select Parking Area:</label>
         <select ng-model="parkingZoneNames" ng-options="zone.slotName for zone in zones" ng-change="changedValue(parkingZoneNames)">
@@ -9,8 +9,8 @@
         <br/>
         <div class="container">
             <div class="row" ng-repeat="itemPointer in slotDetails" ng-if="$index % 6 == 0">
-                <div class="col-md-1 col-sm-1" ng-repeat="item in slotDetails.slice($index,$index+5)" ng-if="item.slotId ">
-                    <img ng-class="{'slot-available':item.slotStatus == 'Available','slot-unavailable':item.slotStatus !== 'Available'}"  _alt="slot_{{item.slotId}}" id="{{item.slotId}}" class="{{item.slotStatus}}" ng-click="slotClick(item)" />
+                <div class="col-md-1 col-sm-1" ng-repeat="item in slotDetails.slice($index,$index+6)" ng-if="item.slotId ">
+                    <img ng-class="{'slot-available':item.slotStatus == 'Available','slot-unavailable':item.slotStatus !== 'Available'}" _alt="slot_{{item.slotId}}" id="{{item.slotId}}" class="{{item.slotStatus}}" ng-click="slotClick(item)" />
                 </div>
             </div>
         </div>
@@ -22,9 +22,102 @@
             </table>
         </div> -->
     </div>
+    <br/>
     <div class="panel panel-default">
         <div class="panel-body">
-            Available Slots:{{count}}
+            <!-- Available Slots: {{count}} -->
+            <div ng-show="bookingFlag">
+                <form name="bookingForm" novalidate>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <label for="avilableCount"><small>Available Slots:</small></label>
+                            </div>
+                            <div class="col-md-4 col-sm-5">
+                                {{count}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <label for="addVehicle"><small>Add new vehicle:</small></label>
+                            </div>
+                            <div class="col-md-4 col-sm-5">
+                                <input type="text" class="form-control" ng-model="bookForm.userVehicle" name="userVehicle">
+                            </div>
+                            <div class="col-md-1 col-sm-1">
+                                <button type="button" ng-click="addVehicle(bookForm.userVehicle)">Add</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <label for="selectVehicle"><small>Select vehicle:</small></label>
+                            </div>
+                            <div class="col-md-4 col-sm-5">
+                                <select ng-model="bookForm.userVehicles" class="form-control" ng-options="vehicle.vehicleNum for vehicle in vehiclesList">
+                                    <option value="">Select your Vehicle to park</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <label for="make_Vehicle"><small>Make:</small></label>
+                            </div>
+                            <div class="col-md-4 col-sm-5">
+                                <input type="text" class="form-control" ng-model="bookForm.vehicleMake" placeholder="Enter make of your Vehicle"></input>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <label for="model_Vehicle"><small>Model:</small></label>
+                            </div>
+                            <div class="col-md-4 col-sm-5">
+                                <input type="text" class="form-control" ng-model="bookForm.vehicleModel" placeholder="Enter model of your Vehicle"></input>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <label for="fromTime"><small>From:</small></label>
+                            </div>
+                            <div class="col-md-9 col-sm-9 ">
+                                <div class="col-md-6 col-sm-6 dateTime">
+                                    <input type="text" class="form-control" ng-model="bookForm.fromDate" data-autoclose="1" placeholder="MM//DD/YYYY" bs-datepicker>
+                                </div>
+                                <div class="col-md-3 col-sm-3 dateTime">
+                                    <input type="text" class="form-control" ng-model="bookForm.fromTime" data-autoclose="1" placeholder="HH:MM" bs-timepicker></input>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <label for="toTime"><small>To:</small></label>
+                            </div>
+                            <div class="col-md-9 col-sm-9">
+                                <div class="col-md-6 col-sm-6 dateTime">
+                                    <input type="text" class="form-control " ng-model="bookForm.toDate" placeholder="MM//DD/YYYY" data-autoclose="1" placeholder="Date" bs-datepicker></input>
+                                </div>
+                                <div class="col-md-3 col-sm-3 dateTime">
+                                    <input type="text" class="form-control" ng-model="bookForm.toTime" data-autoclose="1" placeholder="HH:MM" bs-timepicker></input>
+                                </div>
+                                <div ng-show="bookForm.toDate.$touched">
+                                    <span class="error" ng-if="(bookForm.toDate.getDate() && bookForm.toTime.getHours()) == (bookForm.fromDate.getDate() && bookForm.fromTime.getHours())">Please input Date greater than From Date</span>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row ">
+                            <div class="col-md-6 col-sm-7 center-block">
+                                <button type="button" ng-disabled="bookForm.$invalid" ng-click="proceedBooking(bookForm)">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- end of booking flag div -->
+        </div>
+        <!-- end of panel-body div -->
+        <div ui-view="cofirmation-section">
         </div>
     </div>
 </div>

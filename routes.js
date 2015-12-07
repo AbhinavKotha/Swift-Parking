@@ -17,7 +17,7 @@
         app.get("/getSession", function(req, res) {
             res.json(sessionVar);
         });
-
+        /* Flushes the session data after logout */
         app.get("/logout", function(req, res) {
             sessionVar = null;
             res.json(sessionVar);
@@ -34,7 +34,8 @@
                         res.json({
                             'result': 1,
                             'userName': rows[0].displayName,
-                            'userType': rows[0].userType
+                            'userType': rows[0].userType,
+                            'userEmail': rows[0].email
                         });
                     } else {
                         res.json({
@@ -132,6 +133,110 @@
             });
 
         });
+        app.post("/getVehicles", function(req, res) {
+            connection.query('SELECT vehicleNum from vehicledestails where email=?', [req.body.userEmail], function(err, rows, fields) {
+                if (!err) {
+                    if (rows.length) {
+                        res.json({
+                            'result': 1,
+                            'vehiclesList': rows
+                        });
+                    } //end of if
+                    else {
+                        res.json({
+                            'result': 0
+                        });
+                    }
+
+                } //end of if(!err)
+                else {
+                    console.log('Error while performing Query.');
+                }
+            });
+        });
+        app.post("/addvehicle", function(req, res) {
+            connection.query('INSERT into vehicledestails(email,vehicleNum) values(?,?)', [req.body.email, req.body.vehicleNum], function(err, record) {
+                if (!err) {
+                    res.json({
+                        'result': 1
+                    });
+                } else {
+                    res.json({
+                        'result': 0
+                    });
+                    console.log('Error while inserting record.');
+                }
+            });
+        });
+        //to insert booking information
+        app.post("/bookSlot", function(req, res) {
+            console.log(req.body.slotId);
+            connection.query('UPDATE parking_slots SET slotStatus=? where slotId=?', ['Booked', req.body.slotId], function(err, record) {
+                if (!err) {
+                    res.json({
+                        'result': 1
+                    }); //end of res.json 
+
+                } //end of if update query 
+                else {
+                    res.json({
+                        'result': 0
+                    });
+                    console.log('Error while updating record.');
+                }
+            });
+            //connection.query('update parking_slots SET slotStatus=? where slotId=?',[Booked,req.body.slotId],function(err,record){
+
+        });
+        //});
+        app.post("/insertParkingSlip", function(req, res) {
+            
+            connection.query('INSERT into parkingslip(idParkingSlip,email,vehicleNum,fromDate,fromTime,slotId,toDate,toTime) values(?,?,?,?,?,?,?,?)', [req.body.idParkingSlip, req.body.email, req.body.vehicleNum, req.body.fromDate, req.body.fromTime, req.body.slotId, req.body.toDate, req.body.toTime], function(err, record) {
+                if (!err) {
+                    res.json({
+                        'result': 1
+                    });
+                } // end of if insert query
+                else {
+                    res.json({
+                        'result': 0
+                    });
+                    console.log('Error while inserting record.');
+                }
+            }); //end of function
+        });
+        app.post("/getUserParkingHistory",function(req,res){
+            connection.query('SELECT * FROM parkingslip WHERE email=?',[req.body.email],function(err,rows,fields){
+                if(!err){
+                    res.json({
+                        'result':1,
+                        'parkings': rows
+                    });
+                }
+                else{
+                    res.json({
+                        'result':0
+                    });
+                    console.log('Error while performing query');
+                }
+            });//end of function
+        });//end of getUserParkingHistory
+        app.post("/freeSlot",function(req,res){
+            connection.query('UPDATE parking_slots SET slotStatus=? where slotId=?',['Available',req.body.slotId],function(err,record){
+                if(!err){
+                    res.json({
+                        'result':1
+                    });
+                }
+                else{
+                    res.json({
+                        'result':0
+                    });
+                    console.log("Error while updating table");
+                }
+            });
+        });
+
         //})
         // frontend routes =========================================================
         // route to handle all other angular requests

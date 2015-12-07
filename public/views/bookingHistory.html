@@ -1,0 +1,19 @@
+<div class="container">
+	<table class="table table-bordered">
+		<tr>
+			<th>Reference#</th>
+			<th>Vehicle Parked</th>
+			<th>From</th>
+			<th>To</th>
+			<th>Action</th>
+		</tr>
+		<tr ng-repeat="item in parkings">
+			<td>{{item.idParkingSlip}}</td>
+			<td>{{item.vehicleNum}}</td>
+			<td>{{item.fromDate + item.fromTime}}</td>
+			<td>{{item.toDate + item.toTime}}</td>
+			<td><button ng-click="checkOut(item)">Check Out</button></td>
+		</tr>
+	</table>
+</div>
+<!-- flag_{{item.idParkingSlip}} -->
